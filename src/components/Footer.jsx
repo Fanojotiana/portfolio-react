@@ -84,7 +84,7 @@ const Footer = () => {
               © {new Date().getFullYear()} Fanojotiana R. Tous droits réservés.
             </p>
             <p className="text-gray-500 text-sm mt-2">
-              Made with ❤️ using React & Tailwind CSS
+              {/* Made with ❤️ using React & Tailwind CSS */}
             </p>
           </motion.div>
         </div>
