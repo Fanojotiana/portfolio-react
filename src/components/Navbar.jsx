@@ -104,10 +104,25 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="md:hidden p-2 rounded focus:outline-none
+              bg-indigo-500 text-white
+              dark:bg-yellow-400 dark:text-gray-900
+              border-2 border-indigo-700 dark:border-yellow-500
+              transition-colors duration-300 shadow-lg"
+            aria-label="Ouvrir le menu"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+            {/* icône hamburger */}
+            <svg
+              className="w-3 h-3"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="3"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <line x1="4" y1="7" x2="20" y2="7" stroke="currentColor" strokeLinecap="round"/>
+              <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" strokeLinecap="round"/>
+              <line x1="4" y1="17" x2="20" y2="17" stroke="currentColor" strokeLinecap="round"/>
             </svg>
           </button>
         </div>
