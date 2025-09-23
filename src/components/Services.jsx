@@ -14,8 +14,8 @@ const Services = () => {
       icon: "📱"
     },
     {
-      title: "UI/UX Design",
-      description: "Conception d'interfaces utilisateur intuitives et d'expériences utilisateur optimisées.",
+      title: "Design graphique",
+      description: "Création de visuels et maquettes attractives avec Photoshop, en mettant l’accent sur l’esthétique et la clarté des interfaces.",
       icon: "🎨"
     },
     {

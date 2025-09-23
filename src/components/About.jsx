@@ -53,9 +53,7 @@ const About = () => {
                     Qui suis-je ?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    Je suis un développeur web passionné avec plus de 5 ans d'expérience dans la création 
-                    d'applications web modernes et performantes. Spécialisé en React et Node.js, 
-                    j'aime résoudre des problèmes complexes et créer des expériences utilisateur exceptionnelles.
+                    Développeur web passionné, je crée des applications modernes et performantes avec Laravel, Symfony, React, Vue.js et d’autres technologies. Curieux et orienté solutions, j’aime relever des défis complexes pour offrir des expériences utilisateur intuitives et innovantes.
                   </p>
                 </div>
               </div>

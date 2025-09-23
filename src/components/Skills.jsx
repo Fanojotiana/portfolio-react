@@ -3,12 +3,16 @@ import { motion } from 'framer-motion'
 
 const Skills = () => {
   const skills = [
-    { name: 'React', level: 90 },
-    { name: 'JavaScript', level: 85 },
-    { name: 'Node.js', level: 80 },
-    { name: 'HTML/CSS', level: 95 },
-    { name: 'MongoDB', level: 75 },
-    { name: 'UI/UX Design', level: 70 }
+    { name: 'HTML & CSS', level: 70 },
+    { name: 'Javascript', level: 50 },
+    { name: 'PHP', level: 60 },
+    { name: 'React', level: 70 },
+    { name: 'JavaScript', level: 60 },
+    { name: 'Next.js', level: 50 },
+    { name: 'Symfony', level: 60 },
+    { name: 'Laravel', level: 70 },
+    { name: 'Vue.js', level: 60 },
+ 
   ]
 
   const containerVariants = {

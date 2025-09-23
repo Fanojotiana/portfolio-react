@@ -57,7 +57,7 @@ const Hero = () => {
           className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl"
         >
           <img
-            src="https://i.pinimg.com/736x/8c/5e/9d/8c5e9dd58ecd175df019b09f6bac72b6.jpg"
+            src="/images/fanojo_hero.png"
             alt="Photo de profil"
             className="w-full h-full object-cover"
           />

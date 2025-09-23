@@ -8,28 +8,30 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Application E-commerce",
-      description: "Plateforme e-commerce complète avec panier, paiement et administration.",
+      title: "Gestion d'hopital",
+      description: "Plateforme de gestion d'hôpital avec prise de rendez-vous et dossier patient.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["Php", "jquery","Bootstrap 5", "JavaScript", "Stripe"],
       details: "Développement d'une application e-commerce complète avec système de gestion des produits, panier d'achat, intégration de paiement Stripe et interface d'administration."
     },
+   {
+  id: 2,
+  title: "JobSy",
+  description: "C'est une plateforme d'emploi interactive permettant aux utilisateurs de créer un profil, de postuler à des offres et de communiquer avec des employeurs.",
+  image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+  technologies: ["Php", "jquery","Bootstrap 5", "JavaScript"],
+  details: "Développement d'une plateforme sociale professionnelle avec authentification, publication de contenu, messagerie en temps réel et notifications."
+}
+,
     {
-      id: 2,
-      title: "Réseau Social",
-      description: "Plateforme sociale avec messagerie et partage de contenu.",
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-      technologies: ["React", "Firebase", "Tailwind CSS"],
-      details: "Création d'un réseau social avec authentification, publication de contenu, messagerie en temps réel et notifications."
-    },
-    {
-      id: 3,
-      title: "Application de Gestion",
-      description: "Outil de gestion de projet avec tableau Kanban et calendrier.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1139&q=80",
-      technologies: ["Vue.js", "Express", "PostgreSQL"],
-      details: "Application de gestion de projets avec tableau Kanban, calendrier, suivi du temps et rapports analytiques."
-    }
+  id: 3,
+  title: "Application de Gestion d'École",
+  description: "C'est une application complète pour gérer les élèves, les enseignants, les classes et les emplois du temps.",
+  image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1139&q=80",
+  technologies: ["Vue.js", "Express", "PostgreSQL"],
+  details: "Développement d'une application de gestion scolaire permettant de gérer les élèves, enseignants, classes, emplois du temps, notes et présences, avec suivi analytique et interface intuitive."
+}
+
   ]
 
   const openModal = (project) => {

@@ -3,24 +3,25 @@ import { motion } from 'framer-motion'
 
 const Experience = () => {
   const experiences = [
-    {
+    /*{
       title: "Développeur Fullstack Senior",
       company: "TechCorp Inc.",
       period: "2021 - Présent",
       description: "Développement d'applications web avec React, Node.js et MongoDB. Gestion d'une équipe de 5 développeurs."
-    },
-    {
+    },*/
+    /*{
       title: "Développeur Frontend",
       company: "WebSolutions SARL",
       period: "2019 - 2021",
       description: "Création d'interfaces utilisateur responsive avec React et intégration avec des API REST."
-    },
+    },*/
     {
-      title: "Développeur Junior",
-      company: "StartUp Innovante",
-      period: "2018 - 2019",
-      description: "Apprentissage des bonnes pratiques de développement et participation à divers projets web."
-    }
+  title: "Stagiaire Développeur Junior",
+  company: "I-Numera Corporation",
+  period: "2025",
+  description: "Acquisition des bonnes pratiques de développement et participation à divers projets web."
+}
+
   ]
 
   return (
