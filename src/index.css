@@ -13,8 +13,5 @@
     opacity: 0;
   }
 }
-.animate-bubble {
-  animation-name: bubble;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
+
+

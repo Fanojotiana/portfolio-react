@@ -12,6 +12,7 @@ const Skills = () => {
     { name: 'Symfony', level: 60 },
     { name: 'Laravel', level: 70 },
     { name: 'Vue.js', level: 60 },
+    { name: 'Tailwind', level: 50 },
  
   ]
 
