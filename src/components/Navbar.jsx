@@ -64,12 +64,22 @@ const Navbar = () => {
       }`}
     >
       <nav className="container mx-auto px-4 md:px-8 py-3 flex justify-between items-center">
-        <motion.span 
-          className="text-xl font-bold text-indigo-600 dark:text-indigo-400"
-          whileHover={{ scale: 1.05 }}
-        >
-          MonPortfolio
-        </motion.span>
+       <motion.span
+              className="inline-flex items-center px-6 py-3 text-xl font-semibold text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full shadow-lg ring-2 ring-indigo-500/20"
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 20px 40px -12px rgba(99, 102, 241, 0.4)",
+                background: "linear-gradient(to right, rgb(79, 70, 229), rgb(139, 92, 246))",
+              }}
+              whileTap={{ scale: 0.98 }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 17,
+              }}
+            >
+              Fanojotiana
+            </motion.span>
 
         {/* Menu desktop */}
         <div className="hidden md:flex items-center gap-8">
