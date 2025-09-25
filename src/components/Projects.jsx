@@ -32,6 +32,15 @@ const Projects = () => {
       technologies: ["Symfony", "Tailwind", "JavaScript"," MySQL"],
       details: "Gestion des élèves, enseignants, classes, emplois du temps, notes et présences, avec suivi analytique et interface intuitive.",
       github: "https://github.com/Fanojotiana/Site-de-r-servation-de-vol"
+    },
+    {
+      id: 3,
+      title: "Lambake",
+      description: "Application web qui recommande des tenues adaptées à la météo en temps réel, grâce à l’intégration d’une API météo.",
+      image: "https://media.gq.com/photos/676598892ab7540c29ee81f6/16:9/w_2000,h_1125,c_limit/winteressentialslede1220.png",
+      technologies: ["React", "Tailwind", "Typescript","API externe (OpenWeather)"],
+      details: "Gestion des élèves, enseignants, classes, emplois du temps, notes et présences, avec suivi analytique et interface intuitive.",
+      github: "https://github.com/Fanojotiana/lambake"
     }
   ];
 
