@@ -78,7 +78,7 @@ const Navbar = () => {
                 damping: 17,
               }}
             >
-              Fanojotiana
+              Fanojotiana R.
             </motion.span>
 
         {/* Menu desktop */}
