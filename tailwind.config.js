@@ -5,7 +5,10 @@ module.exports = {
     // ...autres chemins si besoin
   ],
   theme: {
-    extend: {},
+    extend: {
+       fontFamily: {
+        pacifico: ['Pacifico', 'cursive'],
+    },
   },
   plugins: [],
 }
