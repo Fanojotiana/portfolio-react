@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,12 +19,26 @@ const Contact = () => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    // Simulation d'envoi de formulaire
-    setShowAlert(true)
-    setTimeout(() => setShowAlert(false), 3000)
-    setFormData({ name: '', email: '', subject: '', message: '' })
-  }
+    e.preventDefault();
+    // Envoi via EmailJS
+    emailjs.send(
+      'service_fdlm1hg',    // Remplace par ton Service ID EmailJS
+      'template_ju60g3j',   // Remplace par ton Template ID EmailJS
+      formData,
+      'xIVBXXNEe3jrwODZ_'     // Remplace par ta clé publique EmailJS
+    ).then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setShowAlert(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setShowAlert(false), 5000);
+      },
+      (err) => {
+        console.log('FAILED...', err);
+        alert("Erreur lors de l'envoi du message.");
+      }
+    );
+  };
 
   return (
     <section id="contact" className="py-20 px-4 md:px-8 bg-white dark:bg-gray-900">
@@ -65,7 +80,37 @@ const Contact = () => {
                   <h4 className="text-lg font-medium text-gray-800 dark:text-white">Email</h4>
                   <p className="text-gray-600 dark:text-gray-300">fanojotiana@gmail.com</p>
                 </div>
+                
               </div>
+
+              <div className="flex items-start">
+  <div className="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-lg mr-4">
+    <svg
+      className="w-6 h-6 text-indigo-600 dark:text-indigo-400"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3 5a2 2 0 012-2h3.28a2 2 0 011.78 1.11l1.38 2.76a2 2 0 01-.45 2.42l-1.2 1.2a16.06 16.06 0 006.34 6.34l1.2-1.2a2 2 0 012.42-.45l2.76 1.38A2 2 0 0121 17.72V21a2 2 0 01-2 2h-1C8.477 23 1 15.523 1 6V5a2 2 0 012-2h0z"
+      />
+    </svg>
+  </div>
+  <div>
+    <h4 className="text-lg font-medium text-gray-800 dark:text-white">Téléphone</h4>
+    <p className="text-gray-600 dark:text-gray-300">+261348617702</p>
+  </div>
+</div>
+
+
+              
+
+
+
               <div className="flex items-start">
                 <div className="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-lg mr-4">
                   <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

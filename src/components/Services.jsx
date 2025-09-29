@@ -9,10 +9,25 @@ const Services = () => {
       icon: "💻"
     },
     {
-      title: "Applications Mobile",
-      description: "Développement d'applications mobiles cross-platform avec React Native.",
-      icon: "📱"
-    },
+    title: "GitHub",
+    description: "Gestion de projets, versioning et collaboration avec Git et GitHub pour un développement efficace.",
+    icon: (
+      <div className="flex justify-center items-center">
+        <svg
+          className="w-12 h-12 text-gray-900 dark:text-white"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.082-.729.082-.729 1.205.084 1.838 1.238 1.838 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.774.418-1.304.762-1.604-2.665-.304-5.466-1.332-5.466-5.932 0-1.31.468-2.382 1.235-3.222-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 016 0c2.29-1.552 3.296-1.23 3.296-1.23.654 1.653.243 2.873.12 3.176.77.84 1.233 1.912 1.233 3.222 0 4.61-2.803 5.625-5.475 5.921.43.37.823 1.102.823 2.222v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+          />
+        </svg>
+      </div>
+    )
+  },
     {
       title: "Design graphique",
       description: "Création de visuels et maquettes attractives avec Photoshop, en mettant l’accent sur l’esthétique et la clarté des interfaces.",
