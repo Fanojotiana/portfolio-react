@@ -95,10 +95,12 @@ const Skills = () => {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { name: 'React', icon: '⚛️' },
-            { name: 'JavaScript', icon: '🟨' },
-            { name: 'Node.js', icon: '🟢' },
-            { name: 'CSS', icon: '🎨' }
+              { name: 'React', icon: '⚛️' },
+  { name: 'JavaScript', icon: '🟨' },
+  { name: 'Symfony', icon: '🟢' },
+  { name: 'Laravel', icon: '🚀' },
+  { name: 'Vue.js', icon: '🟩' },
+  { name: 'Tailwind CSS', icon: '🎨' }
           ].map((tech, index) => (
             <motion.div
               key={index}

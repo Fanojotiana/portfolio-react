@@ -61,12 +61,12 @@ const About = () => {
 
             <motion.div variants={itemVariants} className="grid grid-cols-2 gap-4">
               <div className="bg-indigo-50 dark:bg-gray-800 p-4 rounded-lg text-center">
-                <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">50+</div>
+                <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">Des</div>
                 <div className="text-gray-600 dark:text-gray-300">Projets réalisés</div>
               </div>
               <div className="bg-indigo-50 dark:bg-gray-800 p-4 rounded-lg text-center">
                 <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">5+</div>
-                <div className="text-gray-600 dark:text-gray-300">Ans d'expérience</div>
+                <div className="text-gray-600 dark:text-gray-300">Technologies maîtrisées</div>
               </div>
             </motion.div>
           </motion.div>
