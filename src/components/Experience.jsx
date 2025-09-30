@@ -4,24 +4,23 @@ import { motion } from 'framer-motion'
 const Experience = () => {
   const experiences = [
     /*{
-      title: "Développeur Fullstack Senior",
+      title: "Senior Fullstack Developer",
       company: "TechCorp Inc.",
-      period: "2021 - Présent",
-      description: "Développement d'applications web avec React, Node.js et MongoDB. Gestion d'une équipe de 5 développeurs."
+      period: "2021 - Present",
+      description: "Developed web applications with React, Node.js, and MongoDB. Managed a team of 5 developers."
     },*/
     /*{
-      title: "Développeur Frontend",
+      title: "Frontend Developer",
       company: "WebSolutions SARL",
       period: "2019 - 2021",
-      description: "Création d'interfaces utilisateur responsive avec React et intégration avec des API REST."
+      description: "Created responsive user interfaces with React and integrated with REST APIs."
     },*/
     {
-  title: "Stagiaire Développeur Junior",
-  company: "I-Numera Corporation",
-  period: "2025",
-  description: "Acquisition des bonnes pratiques de développement et participation à divers projets web."
-}
-
+      title: "Junior Developer Intern",
+      company: "I-Numera Corporation",
+      period: "2025",
+      description: "Learned best development practices and participated in various web projects."
+    }
   ]
 
   return (
@@ -35,7 +34,7 @@ const Experience = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
-            Mon Parcours
+            My Journey
           </h2>
           <div className="w-20 h-1 bg-indigo-600 mx-auto"></div>
         </motion.div>

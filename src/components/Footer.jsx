@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   const socialLinks = [
@@ -23,14 +23,14 @@ const Footer = () => {
     },
     {
       name: 'Facebook',
-url: 'https://www.facebook.com/Fanojo.tiana?locale=fr_FR', 
-icon: (
-  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691V11.29h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.416h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.324V1.325C24 .593 23.407 0 22.675 0z" />
-  </svg>
-)
+      url: 'https://www.facebook.com/Fanojo.tiana?locale=fr_FR',
+      icon: (
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691V11.29h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.416h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.324V1.325C24 .593 23.407 0 22.675 0z" />
+        </svg>
+      )
     }
-  ]
+  ];
 
   return (
     <footer className="bg-gray-900 text-white py-12 px-4 md:px-8">
@@ -44,10 +44,10 @@ icon: (
             className="mb-8 md:mb-0"
           >
             <h3 className="text-2xl font-bold text-indigo-400 mb-2">
-             Fanojotiana Randriamitantsoa
+              Fanojotiana Randriamitantsoa
             </h3>
             <p className="text-gray-400">
-              Développeur Web Fullstack
+              Fullstack Web Developer
             </p>
           </motion.div>
 
@@ -81,16 +81,13 @@ icon: (
             className="text-center md:text-right"
           >
             <p className="text-gray-400">
-              © {new Date().getFullYear()} Fanojotiana R. Tous droits réservés.
-            </p>
-            <p className="text-gray-500 text-sm mt-2">
-         
+              © {new Date().getFullYear()} Fanojotiana R. All rights reserved.
             </p>
           </motion.div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

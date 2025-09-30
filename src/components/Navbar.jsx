@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import ThemeToggle from './ThemeToggle' // Assurez-vous que le chemin est correct
+import ThemeToggle from './ThemeToggle' // Make sure the path is correct
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -34,13 +34,13 @@ const Navbar = () => {
   }, [])
 
   const navItems = [
-    { name: 'Accueil', href: '#home', id: 'home' },
-    { name: 'À propos', href: '#about', id: 'about' },
-    { name: 'Expérience', href: '#experience', id: 'experience' },
-    { name: 'Projets', href: '#projects', id: 'projects' },
-    { name: 'Compétences', href: '#skills', id: 'skills' },
+    { name: 'Home', href: '#home', id: 'home' },
+    { name: 'About', href: '#about', id: 'about' },
+    { name: 'Experience', href: '#experience', id: 'experience' },
+    { name: 'Projects', href: '#projects', id: 'projects' },
+    { name: 'Skills', href: '#skills', id: 'skills' },
     { name: 'Services', href: '#services', id: 'services' },
-    { name: 'Blog', href: '#blog', id: 'blog' },
+   
     { name: 'Contact', href: '#contact', id: 'contact' },
   ]
 
@@ -81,8 +81,8 @@ const Navbar = () => {
               Fanojotiana R.
             </motion.span>
 
-        {/* Menu desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center gap-32">
           <div className="hidden md:flex gap-6">
             {navItems.map((item) => (
               <button
@@ -105,12 +105,12 @@ const Navbar = () => {
               onClick={() => scrollToSection('#contact')}
               className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors hidden md:block"
             >
-              Me Contacter
+              Contact Me
             </button>
           </div>
         </div>
 
-        {/* Menu mobile */}
+        {/* Mobile Menu Toggle */}
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -119,9 +119,9 @@ const Navbar = () => {
               dark:bg-yellow-400 dark:text-gray-900
               border-2 border-indigo-700 dark:border-yellow-500
               transition-colors duration-300 shadow-lg"
-            aria-label="Ouvrir le menu"
+            aria-label="Open menu"
           >
-            {/* icône hamburger */}
+            {/* Hamburger icon */}
             <svg
               className="w-3 h-3"
               fill="none"
@@ -138,7 +138,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Menu mobile ouvert */}
+      {/* Mobile Menu Opened */}
       {isMenuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
@@ -159,7 +159,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('#contact')}
               className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors mt-2"
             >
-              Me Contacter
+              Contact Me
             </button>
           </div>
         </div>

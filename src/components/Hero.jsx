@@ -58,7 +58,7 @@ const Hero = () => {
         >
           <img
             src="/images/fanojo_hero.png"
-            alt="Photo de profil"
+            alt="Profile Photo"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -74,7 +74,7 @@ const Hero = () => {
           transition={{ delay: 1.5, duration: 1 }}
           className="text-xl md:text-2xl text-indigo-600 dark:text-indigo-400 mb-8 font-mono typewriter"
         >
-          Développeur Web Fullstack
+          Fullstack Web Developer
         </motion.div>
 
         <motion.p
@@ -83,7 +83,7 @@ const Hero = () => {
           transition={{ delay: 2, duration: 0.5 }}
           className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12"
         >
-          Je crée des expériences web modernes et interactives avec React, Node.js et les dernières technologies.
+          I create modern and interactive web experiences using React, Next.js, and the latest technologies.
         </motion.p>
 
         <motion.div
@@ -96,13 +96,13 @@ const Hero = () => {
             onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
             className="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors font-medium"
           >
-            Voir mes projets
+            View My Projects
           </button>
           <button
             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
             className="border-2 border-indigo-600 text-indigo-600 dark:border-indigo-400 dark:text-indigo-400 px-8 py-3 rounded-lg hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 dark:hover:text-gray-900 transition-colors font-medium"
           >
-            Me Contacter
+            Contact Me
           </button>
         </motion.div>
       </div>

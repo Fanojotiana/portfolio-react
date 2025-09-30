@@ -34,7 +34,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
-            À propos de moi
+            About Me
           </h2>
           <div className="w-20 h-1 bg-indigo-600 mx-auto"></div>
         </motion.div>
@@ -50,10 +50,11 @@ const About = () => {
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
-                    Qui suis-je ?
+                    Who am I?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    Développeur web passionné, je crée des applications modernes et performantes avec Laravel, Symfony, React, Vue.js et d’autres technologies. Curieux et orienté solutions, j’aime relever des défis complexes pour offrir des expériences utilisateur intuitives et innovantes.
+                    I am a passionate web developer who builds modern and high-performance applications with Laravel, Symfony, React, Vue.js, and other technologies. 
+                    Curious and solution-oriented, I enjoy tackling complex challenges to deliver intuitive and innovative user experiences.
                   </p>
                 </div>
               </div>
@@ -61,12 +62,12 @@ const About = () => {
 
             <motion.div variants={itemVariants} className="grid grid-cols-2 gap-4">
               <div className="bg-indigo-50 dark:bg-gray-800 p-4 rounded-lg text-center">
-                <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">Des</div>
-                <div className="text-gray-600 dark:text-gray-300">Projets réalisés</div>
+                <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">Several</div>
+                <div className="text-gray-600 dark:text-gray-300">Completed Projects</div>
               </div>
               <div className="bg-indigo-50 dark:bg-gray-800 p-4 rounded-lg text-center">
                 <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">5+</div>
-                <div className="text-gray-600 dark:text-gray-300">Technologies maîtrisées</div>
+                <div className="text-gray-600 dark:text-gray-300">Technologies Mastered</div>
               </div>
             </motion.div>
           </motion.div>
@@ -81,7 +82,7 @@ const About = () => {
               <div className="absolute -inset-4 border-2 border-indigo-200 dark:border-gray-700 rounded-lg transform rotate-3"></div>
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-                alt="À propos"
+                alt="About"
                 className="relative rounded-lg shadow-lg w-full h-auto"
               />
             </div>

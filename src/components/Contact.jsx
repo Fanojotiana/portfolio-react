@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import emailjs from '@emailjs/browser'
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,24 +8,24 @@ const Contact = () => {
     email: '',
     subject: '',
     message: ''
-  })
-  const [showAlert, setShowAlert] = useState(false)
+  });
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
-    })
-  }
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Envoi via EmailJS
+    // Send via EmailJS
     emailjs.send(
-      'service_fdlm1hg',    // Remplace par ton Service ID EmailJS
-      'template_ju60g3j',   // Remplace par ton Template ID EmailJS
+      'service_fdlm1hg',    // Replace with your EmailJS Service ID
+      'template_ju60g3j',   // Replace with your EmailJS Template ID
       formData,
-      'xIVBXXNEe3jrwODZ_'     // Remplace par ta clé publique EmailJS
+      'xIVBXXNEe3jrwODZ_'   // Replace with your EmailJS Public Key
     ).then(
       (response) => {
         console.log('SUCCESS!', response.status, response.text);
@@ -35,7 +35,7 @@ const Contact = () => {
       },
       (err) => {
         console.log('FAILED...', err);
-        alert("Erreur lors de l'envoi du message.");
+        alert("Error sending message.");
       }
     );
   };
@@ -51,11 +51,11 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
-            Contactez-moi
+            Contact Me
           </h2>
           <div className="w-20 h-1 bg-indigo-600 mx-auto"></div>
           <p className="text-gray-600 dark:text-gray-300 mt-6 max-w-2xl mx-auto">
-            Vous avez un projet en tête ? Discutons-en ! Je suis toujours ouvert à de nouvelles opportunités.
+            Got a project in mind? Let's discuss! I’m always open to new opportunities.
           </p>
         </motion.div>
 
@@ -67,12 +67,12 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
-              Informations de contact
+              Contact Information
             </h3>
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-lg mr-4">
-                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
@@ -80,46 +80,29 @@ const Contact = () => {
                   <h4 className="text-lg font-medium text-gray-800 dark:text-white">Email</h4>
                   <p className="text-gray-600 dark:text-gray-300">fanojotiana@gmail.com</p>
                 </div>
-                
               </div>
 
               <div className="flex items-start">
-  <div className="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-lg mr-4">
-    <svg
-      className="w-6 h-6 text-indigo-600 dark:text-indigo-400"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M3 5a2 2 0 012-2h3.28a2 2 0 011.78 1.11l1.38 2.76a2 2 0 01-.45 2.42l-1.2 1.2a16.06 16.06 0 006.34 6.34l1.2-1.2a2 2 0 012.42-.45l2.76 1.38A2 2 0 0121 17.72V21a2 2 0 01-2 2h-1C8.477 23 1 15.523 1 6V5a2 2 0 012-2h0z"
-      />
-    </svg>
-  </div>
-  <div>
-    <h4 className="text-lg font-medium text-gray-800 dark:text-white">Téléphone</h4>
-    <p className="text-gray-600 dark:text-gray-300">+261348617702</p>
-  </div>
-</div>
-
-
-              
-
-
+                <div className="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-lg mr-4">
+                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a2 2 0 011.78 1.11l1.38 2.76a2 2 0 01-.45 2.42l-1.2 1.2a16.06 16.06 0 006.34 6.34l1.2-1.2a2 2 0 012.42-.45l2.76 1.38A2 2 0 0121 17.72V21a2 2 0 01-2 2h-1C8.477 23 1 15.523 1 6V5a2 2 0 012-2h0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium text-gray-800 dark:text-white">Phone</h4>
+                  <p className="text-gray-600 dark:text-gray-300">+261348617702</p>
+                </div>
+              </div>
 
               <div className="flex items-start">
                 <div className="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-lg mr-4">
-                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-gray-800 dark:text-white">Localisation</h4>
+                  <h4 className="text-lg font-medium text-gray-800 dark:text-white">Location</h4>
                   <p className="text-gray-600 dark:text-gray-300">IPB 30 Bis Bemasoandro Itaosy, Antananarivo, Madagascar</p>
                 </div>
               </div>
@@ -135,12 +118,12 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               {showAlert && (
                 <div className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 p-4 rounded-lg mb-6">
-                  Votre message a été envoyé avec succès !
+                  Your message has been sent successfully!
                 </div>
               )}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 mb-2">Nom</label>
+                  <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 mb-2">Name</label>
                   <input
                     type="text"
                     id="name"
@@ -165,7 +148,7 @@ const Contact = () => {
                 </div>
               </div>
               <div>
-                <label htmlFor="subject" className="block text-gray-700 dark:text-gray-300 mb-2">Sujet</label>
+                <label htmlFor="subject" className="block text-gray-700 dark:text-gray-300 mb-2">Subject</label>
                 <input
                   type="text"
                   id="subject"
@@ -192,14 +175,14 @@ const Contact = () => {
                 type="submit"
                 className="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors font-medium"
               >
-                Envoyer le message
+                Send Message
               </button>
             </form>
           </motion.div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
