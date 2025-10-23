@@ -47,7 +47,7 @@ const Projects = () => {
       title: "TaskList",
       description: "Our TaskList app helps you organize and manage your tasks efficiently. Create, edit, and categorize your tasks, set deadlines, and track your progress all in one place. With an intuitive interface and smart notifications, staying productive and meeting your goals has never been easier.",
       image: "https://i.pinimg.com/736x/8a/b1/16/8ab116dc6875fa277128db80eb116a56.jpg",
-      technologies: ["React", "Tailwind", "Typescript"],
+      technologies: ["Laravel", "React", "Tailwind", "Typescript"],
       details: "Our TaskList app is designed to help you stay organized and boost your productivity. Easily create tasks, assign priorities, set deadlines, and categorize them by project or type. Track your progress with visual indicators, mark tasks as completed, and receive smart reminders to stay on schedule. With an intuitive interface, collaboration features, and seamless syncing across devices, managing your daily tasks and long-term projects becomes simple, efficient, and stress-free.",
       github: "https://github.com/Fanojotiana/TasksProject"
     }
