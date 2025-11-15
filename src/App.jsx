@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Services from './components/Services'
 /*import Blog from './components/Blog'*/
+import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import AnimatedBackground from './components/AnimatedBackground'
@@ -22,6 +23,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Education />
       <Experience />
       <Projects />
       <Skills />

@@ -12,7 +12,7 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 50)
       
       // Highlight active section
-      const sections = ['home', 'about', 'experience', 'projects', 'skills', 'services', 'blog', 'contact']
+      const sections = ['home', 'about', 'experience', 'projects', 'skills', 'services', 'blog', 'education']
       const scrollPosition = window.scrollY + 100
       
       for (const section of sections) {
@@ -36,12 +36,13 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home', id: 'home' },
     { name: 'About', href: '#about', id: 'about' },
+    { name: 'Education', href: '#education', id: 'education' },
     { name: 'Experiences', href: '#experience', id: 'experience' },
     { name: 'Projects', href: '#projects', id: 'projects' },
     { name: 'Skills', href: '#skills', id: 'skills' },
     { name: 'Services', href: '#services', id: 'services' },
    
-    { name: 'Contact', href: '#contact', id: 'contact' },
+    
   ]
 
   const scrollToSection = (href) => {
