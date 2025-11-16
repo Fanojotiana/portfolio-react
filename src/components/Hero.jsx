@@ -52,10 +52,10 @@ const Hero = () => {
 
       <div className="container mx-auto text-center relative z-10">
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
+          initial={{ opacity: 0, scale: 0.5, y: -20 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl"
+          className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl"
         >
           <img
             src="/images/fanojo_hero.png"
