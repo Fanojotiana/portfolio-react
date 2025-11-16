@@ -82,8 +82,8 @@ const WelcomeSplash = ({ onFinish }) => {
             <div className="relative">
               <TextType
                 text={[
-                  "Bienvenue sur mon portfolio !",
-                  "Je suis Fanojotiana R.",
+                  "Welcome to my portfolio !",
+                  "I'm Fanojotiana R.",
                   "Fullstack Web Developer",
                 ]}
                 typingSpeed={75}

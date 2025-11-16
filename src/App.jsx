@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import AnimatedBackground from "./components/AnimatedBackground";
 import Particles from "./components/Particules";
 import TextType from "./components/WelcomeSplash";
+import SplashCursor from "./components/SplashCursor";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -71,6 +72,7 @@ function App() {
 
           {/* Autres sections */}
           <div className="bg-black dark:bg-gray-900 transition-colors duration-300">
+              <SplashCursor />
             <AnimatedBackground />
             <About />
             <Education />
